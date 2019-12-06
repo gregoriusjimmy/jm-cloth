@@ -30,10 +30,7 @@ class SignUp extends React.Component {
     }
 
     try {
-      const { user } = await auth.createUserWithEmailAndPassword(
-        email,
-        password
-      );
+      const { user } = await auth.createUserWithEmailAndPassword(email, password);
 
       await createUserProfileDocument(user, { displayName });
 
@@ -68,14 +65,7 @@ class SignUp extends React.Component {
             label="Display Name"
             required
           />
-          <FormInput
-            type="email"
-            name="email"
-            value={email}
-            onChange={this.handleChange}
-            label="Email"
-            required
-          />
+          <FormInput type="email" name="email" value={email} onChange={this.handleChange} label="Email" required />
           <FormInput
             type="password"
             name="password"
