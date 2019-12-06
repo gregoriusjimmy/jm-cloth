@@ -11,7 +11,7 @@ import './directory.styles.scss';
 // constructor() {
 //   super();
 //   this.state = {
-//     section: [
+//     sections: [
 //       {
 //         title: "hats",
 //         imageUrl: "https://i.ibb.co/cvpntL1/hats.png",
@@ -50,7 +50,7 @@ import './directory.styles.scss';
 // render() {
 //   return (
 //     <div className='directory-menu'>
-//       {this.state.section.map(({ id, ...otherSectionProps }) => {
+//       {this.state.sections.map(({ id, ...otherSectionProps }) => {
 //         return <MenuItem key={id} {...otherSectionProps} />;
 //       })}
 //     </div>
