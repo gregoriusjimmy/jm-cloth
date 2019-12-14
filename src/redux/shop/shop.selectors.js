@@ -18,9 +18,9 @@ export const selectCollections = createSelector([selectShop], shop => shop.colle
 //   );
 
 export const selectCollection = collectionUrlParam =>
-  createSelector([selectCollections], collections => collections[collectionUrlParam]);
+  createSelector([selectCollections], collections => (collections ? collections[collectionUrlParam] : null));
 
 //covert object to array
 export const selectCollectionsForPreview = createSelector([selectCollections], collections =>
-  Object.keys(collections).map(key => collections[key])
+  collections ? Object.keys(collections).map(key => collections[key]) : []
 );
