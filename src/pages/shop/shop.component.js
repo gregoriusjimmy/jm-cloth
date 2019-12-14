@@ -8,7 +8,7 @@ import CollectionPage from '../collection/collection.component';
 // import SHOP_DATA from "./shop.data";
 // import CollectionPreview from '../../components/collection-preview/collection-preview';
 
-// import { selectCollection } from '../../redux/shop/shop.selectors';
+// import { selectCollections } from '../../redux/shop/shop.selectors';
 
 // class ShopPage extends React.Component {
 //   constructor(props) {
@@ -50,7 +50,7 @@ const ShopPage = ({ match }) => {
 };
 
 // const mapStateToProps = createStructuredSelector({
-//   collections: selectCollection,
+//   collections: selectCollections,
 // });
 
 // export default connect(mapStateToProps)(ShopPage);
