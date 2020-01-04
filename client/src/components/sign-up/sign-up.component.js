@@ -7,7 +7,7 @@ import CustomButtom from '../custom-button/custom-button.component';
 // import { auth, createUserProfileDocument } from '../../firebase/firebase.utils';
 import { signUpStart } from '../../redux/user/user.actions';
 
-import './sign-up.styles.scss';
+import { SignUpContainer, SignUpTitle } from './sign-up.styles';
 
 const SignUp = ({ signUpStart }) => {
   const [userCredentials, setUserCredentials] = useState({
@@ -34,8 +34,8 @@ const SignUp = ({ signUpStart }) => {
   };
 
   return (
-    <div className='sign-up'>
-      <h2 className='title'>I do not have an account</h2>
+    <SignUpContainer>
+      <SignUpTitle>I do not have an account</SignUpTitle>
       <span>Sign Up with your email and password</span>
       <form className='sign-up-form' onSubmit={handleSubmit}>
         <FormInput
@@ -73,7 +73,7 @@ const SignUp = ({ signUpStart }) => {
 
         <CustomButtom type='submit'>SIGN UP</CustomButtom>
       </form>
-    </div>
+    </SignUpContainer>
   );
 };
 
