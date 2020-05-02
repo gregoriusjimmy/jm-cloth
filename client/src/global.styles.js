@@ -1,12 +1,16 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap');
+
+
 body {
-  font-family: "Open Sans Condensed";
-  padding: 20px 60px;
+  font-family: 'Montserrat', sans-serif;
+  /* padding: 20px 60px; */
 
   @media screen and (max-width: 800px){
-      padding: 10px
+      /* padding: 10px */
   }
 }
 

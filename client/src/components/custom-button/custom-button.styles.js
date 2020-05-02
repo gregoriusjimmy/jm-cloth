@@ -35,7 +35,7 @@ const googleSignInStyles = css`
   }
 `;
 
-const getButtonStyles = props => {
+const getButtonStyles = (props) => {
   if (props.isGoogleSignIn) {
     return googleSignInStyles;
   }
@@ -54,8 +54,8 @@ export const CustomButtonContainer = styled.button`
   font-size: 15px;
 
   text-transform: uppercase;
-  font-family: 'Open Sans Condensed';
-  font-weight: bolder;
+
+  font-weight: bold;
 
   cursor: pointer;
   display: flex;

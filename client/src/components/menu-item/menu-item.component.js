@@ -5,7 +5,6 @@ import {
   BackgroundImageContainer,
   ContentContainer,
   ContentTitle,
-  ContentSubtitle,
 } from './menu-item.styles';
 
 const MenuItem = ({ title, imageUrl, size, history, linkUrl, match }) => {
@@ -20,7 +19,6 @@ const MenuItem = ({ title, imageUrl, size, history, linkUrl, match }) => {
       />
       <ContentContainer className='content'>
         <ContentTitle>{title.toUpperCase()}</ContentTitle>
-        <ContentSubtitle>SHOP NOW</ContentSubtitle>
       </ContentContainer>
     </MenuItemContainer>
   );
