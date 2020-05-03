@@ -13,13 +13,13 @@ const buttonStyles = css`
 `;
 
 const invertedButtonStyles = css`
-  background-color: white;
+  background-color: #feba54;
   color: black;
   border: 1px solid black;
 
   &:hover {
     background-color: black;
-    color: white;
+    color: #feba54;
     border: none;
   }
 `;
@@ -51,7 +51,7 @@ export const CustomButtonContainer = styled.button`
   letter-spacing: 0.5px;
   line-height: 50px;
   padding: 0 35px 0 35px;
-  font-size: 15px;
+  font-size: 10px;
 
   text-transform: uppercase;
 

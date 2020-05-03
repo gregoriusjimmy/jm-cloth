@@ -31,6 +31,7 @@ export const CollectionItemContainer = styled.div`
 `;
 
 export const AddButton = styled(CustomButton)`
+  font-size: 12px;
   width: 80%;
   opacity: 0.7;
   position: absolute;
@@ -59,14 +60,16 @@ export const CollectionFooterContainer = styled.div`
   display: flex;
   justify-content: space-between;
   font-size: 18px;
+  @media screen and (max-width: 800px) {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
 `;
 
 export const NameContainer = styled.span`
-  width: 90%;
   margin-bottom: 15px;
 `;
 
 export const PriceContainer = styled.span`
-  width: 10%;
   text-align: right;
 `;

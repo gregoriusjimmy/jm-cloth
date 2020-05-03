@@ -12,9 +12,10 @@ export const CollectionPreviewContainer = styled.div`
 export const TitleContainer = styled.h1`
   font-size: 28px;
   margin-bottom: 25px;
+  color: #e3a03b;
   cursor: pointer;
   &:hover {
-    color: grey;
+    color: #feba54;
   }
 `;
 
