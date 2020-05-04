@@ -30,7 +30,7 @@ export const LogoContainer = styled(Link)`
   .logo {
     width: 50px;
 
-    @media (max-width: 800px) {
+    @media screen and (max-width: 800px) {
       width: 30px;
     }
   }
@@ -48,6 +48,8 @@ export const OptionsContainer = styled.div`
   align-items: center;
   justify-content: flex-end;
   @media screen and (max-width: 800px) {
+    width: 80%;
+    font-size: 0.7em;
     width: 80%;
   }
 `;

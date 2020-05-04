@@ -1,13 +1,13 @@
 import styled, { css } from 'styled-components';
 
 const buttonStyles = css`
-  background-color: black;
+  background-color: #e3a03b;
   color: white;
   border: none;
 
   &:hover {
     background-color: white;
-    color: black;
+    color: #e3a03b;
     border: 1px solid black;
   }
 `;
@@ -34,10 +34,21 @@ const googleSignInStyles = css`
     border: none;
   }
 `;
+const isSignInUpStyles = css`
+  background-color: #e3a03b;
+  color: white;
+  border: none;
 
+  &:hover {
+    background-color: #d49333;
+  }
+`;
 const getButtonStyles = (props) => {
   if (props.isGoogleSignIn) {
     return googleSignInStyles;
+  }
+  if (props.isSignInUp) {
+    return isSignInUpStyles;
   }
   return props.inverted ? invertedButtonStyles : buttonStyles;
 };
@@ -60,4 +71,7 @@ export const CustomButtonContainer = styled.button`
   cursor: pointer;
   display: flex;
   justify-content: center;
+  @media screen and (max-width: 800px) {
+    min-width: unset;
+  }
 `;

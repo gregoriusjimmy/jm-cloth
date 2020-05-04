@@ -42,6 +42,7 @@ export const AddButton = styled(CustomButton)`
     opacity: 0.9;
     min-width: unset;
     padding: 0 10px;
+    font-size: 10px;
   }
 `;
 
@@ -61,7 +62,7 @@ export const CollectionFooterContainer = styled.div`
   justify-content: space-between;
   font-size: 18px;
   @media screen and (max-width: 800px) {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     font-size: 16px;
   }
 `;

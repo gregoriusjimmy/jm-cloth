@@ -25,7 +25,7 @@ const SignIn = ({ emailSignInStart, googleSignInStart }) => {
 
   const { email, password } = userCredentials;
 
-  const handleSubmit = async event => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
     // try {
     //   await auth.signInWithEmailAndPassword(email, password);
@@ -36,7 +36,7 @@ const SignIn = ({ emailSignInStart, googleSignInStart }) => {
     // this.setState({ email: '', password: '' });
     emailSignInStart(email, password);
   };
-  const handleChange = event => {
+  const handleChange = (event) => {
     const { value, name } = event.target;
 
     setCredentials({ ...userCredentials, [name]: value });
@@ -65,7 +65,9 @@ const SignIn = ({ emailSignInStart, googleSignInStart }) => {
           required
         />
         <ButtonsBarContainer>
-          <CustomButton type='submit'>Sign In</CustomButton>
+          <CustomButton isSignInUp type='submit'>
+            Sign In
+          </CustomButton>
           <CustomButton
             type='button'
             onClick={googleSignInStart}
@@ -79,7 +81,7 @@ const SignIn = ({ emailSignInStart, googleSignInStart }) => {
   );
 };
 
-const mapDispatchToProps = dispatch => ({
+const mapDispatchToProps = (dispatch) => ({
   googleSignInStart: () => dispatch(googleSignInStart()),
   emailSignInStart: (email, password) =>
     dispatch(emailSignInStart({ email, password })),
