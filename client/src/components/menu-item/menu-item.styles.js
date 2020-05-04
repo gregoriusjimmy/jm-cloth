@@ -21,7 +21,7 @@ export const MenuItemContainer = styled.div`
     }
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 768px) {
     height: ${({ size }) => (size ? '300px' : '120px')};
     width: 40%;
   }
@@ -42,7 +42,7 @@ export const ContentContainer = styled.div`
   background-color: #feba54;
   opacity: 0.7;
   position: absolute;
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 768px) {
     padding: 15px;
   }
 `;
@@ -52,7 +52,7 @@ export const ContentTitle = styled.span`
   margin-bottom: 6px;
   font-size: 22px;
   color: #4a4a4a;
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 768px) {
     font-size: 16px;
   }
 `;

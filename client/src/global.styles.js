@@ -9,7 +9,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   /* padding: 20px 60px; */
 
-  @media screen and (max-width: 800px){
+  @media screen and (max-width: 768px){
       /* padding: 10px */
   }
 }
