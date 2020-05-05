@@ -17,7 +17,7 @@ export const CollectionItemContainer = styled.div`
       display: flex;
     }
   }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 768px) {
     width: 40vw;
     &:hover {
       .image {
@@ -31,16 +31,18 @@ export const CollectionItemContainer = styled.div`
 `;
 
 export const AddButton = styled(CustomButton)`
+  font-size: 12px;
   width: 80%;
   opacity: 0.7;
   position: absolute;
   top: 255px;
   display: none;
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 768px) {
     display: block;
     opacity: 0.9;
     min-width: unset;
     padding: 0 10px;
+    font-size: 10px;
   }
 `;
 
@@ -59,14 +61,16 @@ export const CollectionFooterContainer = styled.div`
   display: flex;
   justify-content: space-between;
   font-size: 18px;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
 `;
 
 export const NameContainer = styled.span`
-  width: 90%;
   margin-bottom: 15px;
 `;
 
 export const PriceContainer = styled.span`
-  width: 10%;
   text-align: right;
 `;

@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 // import { updateCollections } from '../../redux/shop/shop.actions';
 
 // import WithSpinner from '../../components/with-spinner/with-spinner.component';
+import { ShopContainer } from './shop.styles';
 import Spinner from '../../components/spinner/spinner.component';
 import { fetchCollectionsStart } from '../../redux/shop/shop.actions';
 
@@ -21,7 +22,7 @@ const ShopPage = ({ fetchCollectionsStart, match }) => {
   }, [fetchCollectionsStart]);
 
   return (
-    <div className='shop-page'>
+    <ShopContainer>
       <Suspense fallback={<Spinner />}>
         <Route
           exact
@@ -34,7 +35,7 @@ const ShopPage = ({ fetchCollectionsStart, match }) => {
           component={CollectionPageContainer}
         />
       </Suspense>
-    </div>
+    </ShopContainer>
   );
 };
 
@@ -49,7 +50,7 @@ const ShopPage = ({ fetchCollectionsStart, match }) => {
 //   IsCollectionsLoaded: selectIsCollectionsLoaded,
 // });
 
-const mapDispatchToProps = dispatch => ({
+const mapDispatchToProps = (dispatch) => ({
   // updateCollections: collectionsMap => dispatch(updateCollections(collectionsMap)),
   fetchCollectionsStart: () => dispatch(fetchCollectionsStart()),
 });

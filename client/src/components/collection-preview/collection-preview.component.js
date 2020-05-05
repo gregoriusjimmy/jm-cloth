@@ -1,19 +1,24 @@
 import React from 'react';
 import CollectionItem from '../collection-item/collection-item.component';
+import { withRouter } from 'react-router-dom';
 import {
   CollectionPreviewContainer,
   TitleContainer,
   PreviewContainer,
 } from './collection-preview.styles';
 
-const CollectionPreview = ({ title, items }) => {
+const CollectionPreview = ({ title, items, history, match }) => {
   return (
     <CollectionPreviewContainer>
-      <TitleContainer>{title.toUpperCase()}</TitleContainer>
+      <TitleContainer
+        onClick={() => history.push(`${match.url}/${title.toLowerCase()}`)}
+      >
+        {title.toUpperCase()}
+      </TitleContainer>
       <PreviewContainer>
         {items
           .filter((item, idx) => idx < 4)
-          .map(item => {
+          .map((item) => {
             return <CollectionItem key={item.id} item={item} />;
           })}
       </PreviewContainer>
@@ -21,4 +26,4 @@ const CollectionPreview = ({ title, items }) => {
   );
 };
 
-export default CollectionPreview;
+export default withRouter(CollectionPreview);

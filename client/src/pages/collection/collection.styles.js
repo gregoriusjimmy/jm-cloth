@@ -4,7 +4,7 @@ export const CollectionPageContainer = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 768px) {
     align-items: center;
   }
 `;
@@ -12,6 +12,7 @@ export const CollectionPageContainer = styled.div`
 export const CollectionTitle = styled.h2`
   font-size: 38px;
   margin: 0 auto 30px;
+  color: #e3a03b;
 `;
 
 export const CollectionItemsContainer = styled.div`
@@ -22,7 +23,7 @@ export const CollectionItemsContainer = styled.div`
     margin-bottom: 30px;
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 768px) {
     grid-template-columns: 1fr 1fr;
   }
 `;
